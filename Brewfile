@@ -21,3 +21,6 @@ brew 'php'
 brew 'mysql'
 brew 'nginx'
 brew 'yarn'
+
+# Apps
+cask 'iterm2'
