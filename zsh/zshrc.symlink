@@ -100,4 +100,3 @@ export SITES=$CODE/Sites
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
