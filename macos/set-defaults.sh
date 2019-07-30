@@ -39,3 +39,19 @@ defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+
+# iTerm Settings
+defaults write com.googlecode.iterm2 HideScrollbar -bool true
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+if test -x /usr/libexec/PlistBuddy
+then
+	/usr/libexec/PlistBuddy -c "Add :'New Bookmarks' array" ~/Library/Preferences/com.googlecode.iterm2.plist > /dev/null 2>&1  # Note: Ensure that the array is present on fresh install
+
+	# Terminal Type
+	/usr/libexec/PlistBuddy -c "Delete :'New Bookmarks':0:'Terminal Type'" ~/Library/Preferences/com.googlecode.iterm2.plist > /dev/null 2>&1
+	/usr/libexec/PlistBuddy -c "Add :'New Bookmarks':0:'Terminal Type' string xterm-256color-italic" ~/Library/Preferences/com.googlecode.iterm2.plist
+
+	/usr/libexec/PlistBuddy -c "Delete :'New Bookmarks':0:'Vertical Spacing'" ~/Library/Preferences/com.googlecode.iterm2.plist > /dev/null 2>&1
+	/usr/libexec/PlistBuddy -c "Add :'New Bookmarks':0:'Vertical Spacing' string 1.451560146837349" ~/Library/Preferences/com.googlecode.iterm2.plist
+fi
