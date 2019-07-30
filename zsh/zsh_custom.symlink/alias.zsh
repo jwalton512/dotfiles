@@ -1,0 +1,7 @@
+# Git
+alias gp='git push origin HEAD'
+alias gd='git diff --color | sed "s/^\([^-+ ]*\)[-+ ]/\\1/" | less -r'
+alias gc='git commit'
+alias gco='git checkout'
+alias gb='git branch'
+alias gs='git status -sb'
