@@ -19,6 +19,7 @@ if test ! $(which valet)
 then
     $HOME/.composer/vendor/bin/valet install
 fi
+(cd $HOME/Code/Sites; valet park)
 
 # PHP Packages
 if test $(which pecl)
