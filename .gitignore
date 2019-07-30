@@ -1,2 +1,4 @@
 git/gitconfig.local.symlink
 vim/vim.symlink/.netrwhist
+vim/vim.symlink/autoload/plug.vim
+vim/vim.symlink/plugged/
