@@ -5,6 +5,7 @@ tap 'caskroom/versions'
 tap 'homebrew/bundle'
 
 # Binaries
+brew 'antibody'
 brew 'bash' # Latest Bash version
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'git'
@@ -15,6 +16,7 @@ brew 'libmemcached'
 brew 'pkg-config'
 brew 'tree'
 brew 'zlib'
+brew 'zsh'
 
 # Development
 brew 'php'

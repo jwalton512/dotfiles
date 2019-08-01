@@ -1,13 +1,12 @@
 #!/bin/sh
 #
-# ZSH
-#
-# This installs our ZSH environment (using oh-my-zsh)
+# zsh
 
-# Check for oh-my-zsh
-if test ! -d "$HOME/.oh-my-zsh"
+# change shell to zsh
+if ! grep -qxF $(which zsh) /etc/shells
 then
-  echo "  Installing oh-my-zsh for you."
-
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    echo "  Adding $(which zsh) to /etc/shells"
+    echo "$(which zsh)" | sudo tee -a /etc/shells
 fi
+
+chsh -s $(which zsh)
