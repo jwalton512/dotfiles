@@ -1,3 +1,4 @@
+setopt auto_cd
 unsetopt menu_complete
 setopt auto_menu
 setopt complete_in_word
