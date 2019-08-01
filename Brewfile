@@ -14,6 +14,7 @@ brew 'imagemagick'
 brew 'libmemcached'
 # brew 'mas' # Mac App Store manager
 brew 'pkg-config'
+brew 'python'
 brew 'tree'
 brew 'zlib'
 brew 'zsh'
