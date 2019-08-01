@@ -1,0 +1,45 @@
+#!/bin/sh
+#
+# displays weather results from wttr.in
+#
+# USAGE:
+#
+#   $ weather
+#   # => displays weather for ip address
+#
+#   $ weather nyc
+#   $ weather 85201
+#   # => displays weather for specified geographical location
+
+set -e
+
+format="?format=3"
+location=""
+
+displayUsageAndExit() {
+    echo "weather -- display weather"
+    echo ""
+    echo "Usage: weather [options] [location]"
+    echo ""
+    echo "Options:"
+    echo "  -a, --all   Show all weather details"
+    echo "  -h, --help  Show this help message and exit"
+    exit
+}
+
+while [ $# -gt 0 ];
+do
+    case "$1" in
+        "-h"|"--help")
+            displayUsageAndExit
+            ;;
+        "-a"|"--all")
+            format=""
+            ;;
+        *)
+            location=$1
+    esac
+    shift
+done
+
+curl "wttr.in/~$location$format"
