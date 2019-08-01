@@ -1,3 +1,4 @@
+alias ga='git add'
 alias gp='git push origin HEAD'
 alias gd='git diff --color | sed "s/^\([^-+ ]*\)[-+ ]/\\1/" | less -r'
 alias gc='git commit'
