@@ -12,6 +12,9 @@ export MNML_RPROMPT=('mnml_cwd 20')
 typeset -U config_files
 config_files=($DOTFILES/**/*.zsh)
 
+# load path helper
+source $ZSH/path_helper.sh
+
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}
 do

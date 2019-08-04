@@ -1,1 +1,3 @@
-export PATH="./bin:$DOTFILES/bin:$PATH:/usr/local/sbin"
+pathPrepend ./bin
+pathPrepend $DOTFILES/bin
+pathAppend /usr/local/sbin
