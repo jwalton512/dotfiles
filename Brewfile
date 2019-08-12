@@ -8,6 +8,7 @@ tap 'homebrew/bundle'
 brew 'antibody'
 brew 'bash' # Latest Bash version
 brew 'coreutils' # Those that come with macOS are outdated
+brew 'fzf'
 brew 'git'
 brew 'grep'
 brew 'imagemagick'
