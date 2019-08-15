@@ -16,6 +16,7 @@ brew 'libmemcached'
 # brew 'mas' # Mac App Store manager
 brew 'pkg-config'
 brew 'python'
+brew 'ripgrep'
 brew 'tree'
 brew 'zlib'
 brew 'zsh'
