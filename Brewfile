@@ -3,6 +3,7 @@ tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
+tap 'universal-ctags/universal-ctags'
 
 # Binaries
 brew 'antibody'
@@ -18,6 +19,7 @@ brew 'pkg-config'
 brew 'python'
 brew 'ripgrep'
 brew 'tree'
+brew 'universal-ctags', args: ['HEAD']
 brew 'zlib'
 brew 'zsh'
 
