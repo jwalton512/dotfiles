@@ -11,6 +11,8 @@ export MNML_RPROMPT=('mnml_cwd 20')
 # all of our zsh files
 typeset -U config_files
 config_files=($DOTFILES/**/*.zsh)
+# alias files are loaded through .zshenv
+config_files=(${config_files:#*/alias.zsh})
 
 # load path helper
 source $ZSH/path_helper.sh
