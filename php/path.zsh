@@ -1,0 +1,1 @@
+pathAppend ~/.composer/vendor/bin
