@@ -17,7 +17,9 @@ brew 'libmemcached'
 # brew 'mas' # Mac App Store manager
 brew 'pkg-config'
 brew 'python'
+brew 'reattach-to-user-namespace'
 brew 'ripgrep'
+brew 'tmux'
 brew 'tree'
 brew 'universal-ctags', args: ['HEAD']
 brew 'zlib'
