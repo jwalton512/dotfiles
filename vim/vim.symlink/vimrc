@@ -1,3 +1,4 @@
+" vim:foldmethod=marker:foldlevel=0:foldenable
 call plug#begin("~/.vim/plugged")
 Plug 'tpope/vim-vinegar'
 Plug 'gruvbox-community/gruvbox'
@@ -16,6 +17,7 @@ set wildmenu
 set number
 set numberwidth=5
 set laststatus=2
+set modelines=5
 
 set shiftwidth=4
 set softtabstop=4
