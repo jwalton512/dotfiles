@@ -2,6 +2,8 @@ call plug#begin("~/.vim/plugged")
 Plug 'tpope/vim-vinegar'
 Plug 'gruvbox-community/gruvbox'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'janko/vim-test'
+Plug 'tpope/vim-dispatch'
 call plug#end()
 
 runtime macros/matchit.vim
@@ -27,3 +29,20 @@ set backupdir=~/.vim/tmp/backup//
 let g:gruvbox_italic=1
 let g:gruvbox_number_column='dark0_hard'
 colorscheme gruvbox
+
+let mapleader=","
+
+" vim-dispatch {{{
+let g:dispatch_compilers = {
+  \ './bin/phpunit': 'phpunit',
+  \ './vendor/bin/phpunit': 'phpunit',
+  \}
+" }}}
+
+" vim-test {{{
+let test#strategy="dispatch"
+nnoremap <silent> <leader>tn :TestNearest<cr>
+nnoremap <silent> <leader>tf :TestFile<cr>
+nnoremap <silent> <leader>ts :TestSuite<cr>
+nnoremap <silent> <leader>tl :TestLast<cr>
+" }}}
