@@ -30,6 +30,7 @@ set backup
 set noswapfile
 set undodir=~/.vim/tmp/undo//
 set backupdir=~/.vim/tmp/backup//
+set autowrite
 
 let g:gruvbox_italic=1
 let g:gruvbox_number_column='dark0_hard'
