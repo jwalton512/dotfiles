@@ -5,6 +5,7 @@ Plug 'gruvbox-community/gruvbox'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'janko/vim-test'
 Plug 'tpope/vim-dispatch'
+Plug 'arnaud-lb/vim-php-namespace'
 call plug#end()
 
 runtime macros/matchit.vim
@@ -48,3 +49,8 @@ nnoremap <silent> <leader>tf :TestFile<cr>
 nnoremap <silent> <leader>ts :TestSuite<cr>
 nnoremap <silent> <leader>tl :TestLast<cr>
 " }}}
+
+" vim-php-namespace {{{
+let g:php_namespace_sort_after_insert = 1
+let g:php_namespace_sort = "'{,'}-1 ! awk '{ print length(), $0 | \"sort -n | cut -d\\\\  -f2-\" }'"
+"}}}
