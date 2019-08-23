@@ -63,3 +63,9 @@ nnoremap <silent> <leader>tl :TestLast<cr>
 let g:php_namespace_sort_after_insert = 1
 let g:php_namespace_sort = "'{,'}-1 ! awk '{ print length(), $0 | \"sort -n | cut -d\\\\  -f2-\" }'"
 "}}}
+
+" {{{ maps
+" goto buffer
+" open buffer list and prompt for buffer #/name to enter
+nnoremap gb :ls<cr>:b<space>
+" }}}
