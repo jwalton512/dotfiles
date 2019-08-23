@@ -21,6 +21,7 @@ set number
 set numberwidth=5
 set laststatus=2
 set modelines=5
+set nowrap
 
 set shiftwidth=4
 set softtabstop=4
