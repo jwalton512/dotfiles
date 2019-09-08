@@ -1,3 +1,11 @@
 --recurse=yes
---exclude=.git
+
 --exclude=node_modules
+--exclude=.git
+
+--exclude=*.css
+--exclude=*.html
+--exclude=*.js
+--exclude=*.json
+--exclude=*.md
+--exclude=*.xml
