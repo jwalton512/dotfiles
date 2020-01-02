@@ -40,6 +40,9 @@ defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool 
 defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
+# Change location for screenshots
+defaults write com.apple.screencapture location ~/Desktop
+
 # iTerm Settings
 defaults write com.googlecode.iterm2 HideScrollbar -bool true
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
