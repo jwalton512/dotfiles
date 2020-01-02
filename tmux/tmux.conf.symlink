@@ -5,6 +5,7 @@ set-option -g base-index 1
 set-option -g pane-base-index 1
 set-option -g renumber-windows on
 set-option -g status-left-length 20
+set-option -g mouse on
 
 # change prefix to <C-a>
 set-option -g prefix C-a
