@@ -8,6 +8,9 @@ Plug 'tpope/vim-dispatch'
 Plug 'arnaud-lb/vim-php-namespace'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'w0rp/ale'
+Plug 'SirVer/ultisnips'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 runtime macros/matchit.vim
@@ -72,6 +75,13 @@ let g:ale_fixers = {
     \}
 
 let g:ale_fix_on_save = 1
+"}}}
+
+"{{{ ultisnips
+let g:UltiSnipsExpandTrigger='<tab>'
+let g:UltiSnipsJumpForwardTrigger='<c-b>'
+let g:UltiSnipsJumpBackwardTrigger='<c-z>'
+let g:UltiSnipsEditSplit='vertical'
 "}}}
 
 " {{{ maps
