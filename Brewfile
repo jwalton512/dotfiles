@@ -8,6 +8,7 @@ tap 'universal-ctags/universal-ctags'
 # Binaries
 brew 'antibody'
 brew 'bash' # Latest Bash version
+brew 'bat'
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'fzf'
 brew 'git'
