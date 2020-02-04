@@ -87,9 +87,16 @@ let g:UltiSnipsEditSplit='vertical'
 "}}}
 
 " {{{ maps
+" quickly exit insert mode
+inoremap jj <esc>
+
 " goto buffer
 " open buffer list and prompt for buffer #/name to enter
 nnoremap gb :ls<cr>:b<space>
+
+" toggle fold
+nnoremap <space> za
+
 " toggle quickfix window
 nnoremap <leader>q :call ToggleQuickfixList()<cr>
 " }}}
