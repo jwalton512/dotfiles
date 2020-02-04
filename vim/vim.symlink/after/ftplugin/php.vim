@@ -1,3 +1,4 @@
+let g:PHP_noArrowMatching=1
 setlocal matchpairs-=<:>
 
 inoremap <Leader>u <Esc>:call phpnamespace#insert_add_use()<CR>
