@@ -86,6 +86,10 @@ let g:UltiSnipsJumpBackwardTrigger='<c-z>'
 let g:UltiSnipsEditSplit='vertical'
 "}}}
 
+"{{{ fzf
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
+"}}}
+
 " {{{ maps
 " quickly exit insert mode
 inoremap jj <esc>
@@ -93,6 +97,9 @@ inoremap jj <esc>
 " goto buffer
 " open buffer list and prompt for buffer #/name to enter
 nnoremap gb :ls<cr>:b<space>
+
+" find files
+nnoremap <c-p> :AllFiles<cr>
 
 " toggle fold
 nnoremap <space> za
