@@ -88,4 +88,6 @@ let g:UltiSnipsEditSplit='vertical'
 " goto buffer
 " open buffer list and prompt for buffer #/name to enter
 nnoremap gb :ls<cr>:b<space>
+" toggle quickfix window
+nnoremap <leader>q :call ToggleQuickfixList()<cr>
 " }}}
