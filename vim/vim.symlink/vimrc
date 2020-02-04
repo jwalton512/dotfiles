@@ -1,5 +1,5 @@
 " vim:foldmethod=marker:foldlevel=0:foldenable
-call plug#begin("~/.vim/plugged")
+call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-vinegar'
 Plug 'gruvbox-community/gruvbox'
 Plug 'ludovicchabant/vim-gutentags'
