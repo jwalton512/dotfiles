@@ -9,3 +9,5 @@
 --exclude=*.json
 --exclude=*.md
 --exclude=*.xml
+
+--PHP-kinds=cfit
