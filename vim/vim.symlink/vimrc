@@ -96,7 +96,7 @@ inoremap jj <esc>
 
 " goto buffer
 " open buffer list and prompt for buffer #/name to enter
-nnoremap gb :ls<cr>:b<space>
+nnoremap gb :Buffers<cr>
 
 " find files
 nnoremap <c-p> :AllFiles<cr>
