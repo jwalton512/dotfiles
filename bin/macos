@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 DOTFILES_ROOT=${0:a:h:h}
-source "${DOTFILES_ROOT}/bin/helpers.zsh"
+source "${DOTFILES_ROOT}/bin/helpers"
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
