@@ -1,0 +1,11 @@
+.zsh_history
+Brewfile.lock.json
+
+**/git/config.local
+
+dots/.local/*
+!dots/.local/bin/
+
+dots/.config/*
+!dots/.config/git/
+!dots/.config/zsh/

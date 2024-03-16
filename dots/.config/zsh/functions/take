@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+
+# make a directory then cd to it
+mkdir -p $@ && cd ${@:$#}

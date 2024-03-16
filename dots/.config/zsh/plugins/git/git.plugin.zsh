@@ -1,0 +1,10 @@
+# Aliases
+alias ga="git add"
+alias gad="git add -nvA"
+alias gb="git branch"
+alias gc="git commit"
+alias gco="git checkout"
+alias gcod="git checkout develop"
+alias gcom="git checkout main"
+alias gi="git init"
+alias gs="git status -sb"

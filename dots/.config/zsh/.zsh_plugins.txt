@@ -1,0 +1,15 @@
+mattmc3/zephyr path:plugins/zfunctions
+
+sindresorhus/pure kind:fpath
+romkatv/powerlevel10k kind:fpath
+
+mattmc3/zephyr path:plugins/completion
+mattmc3/zephyr path:plugins/directory
+mattmc3/zephyr path:plugins/editor
+mattmc3/zephyr path:plugins/homebrew conditional:is-macos
+mattmc3/zephyr path:plugins/macos conditional:is-macos
+mattmc3/zephyr path:plugins/prompt
+
+$ZSH_CUSTOM path:plugins/git
+$ZSH_CUSTOM path:plugins/laravel
+$ZSH_CUSTOM path:plugins/python

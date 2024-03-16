@@ -1,0 +1,5 @@
+#!/usr/bin/env zsh
+
+zstyle ':zephyr:plugin:prompt' theme 'p10k' 'pure'
+
+zstyle ':zephyr:plugin:editor' key-bindings 'vi'

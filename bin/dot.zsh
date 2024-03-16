@@ -1,0 +1,25 @@
+#!/usr/bin/env zsh
+
+DOTFILES_ROOT=${0:a:h:h}
+source "${DOTFILES_ROOT}/bin/helpers.zsh"
+
+: ${HOMEBREW_PREFIX:=/opt/homebrew}
+
+info "Setting up Mac..."
+
+# Homebrew
+if ! [[ -d $HOMEBREW_PREFIX ]]; then
+    info "Installing Homebrew"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+eval "$($HOMEBREW_PREFIX/bin/brew shellenv)"
+brew update
+brew bundle --file "${DOTFILES_ROOT}/Brewfile"
+
+# Link dotfiles
+info "Linking dotfiles"
+for src in $(find -H "${DOTFILES_ROOT}/dots" -mindepth 1 -maxdepth 1); do
+    dst="${HOME}/$(basename "${src}")"
+    linkFile "$src" "$dst"
+done

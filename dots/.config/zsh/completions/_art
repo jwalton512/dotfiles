@@ -1,0 +1,4 @@
+#compdef art
+#autoload
+
+_artisan

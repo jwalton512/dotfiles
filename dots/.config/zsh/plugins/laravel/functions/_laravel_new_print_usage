@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+emulate -L zsh; setopt local_options $_adote_funcopts
+cat<<EOS
+laravel-new - create new laravel application
+
+usage: laravel-new [<flags>] <name> [<services>...]
+
+flags:
+  -d, --devcontainer   Include devcontainer in build
+  -h, --help           Show this message
+  -n, --no-services    Build with no additional services
+  -p, --php=<php ver>  Set php version [default='83']
+EOS

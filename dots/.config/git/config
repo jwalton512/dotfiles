@@ -1,0 +1,26 @@
+[user]
+    # These values are set in ~/.config/git/config.local
+
+[core]
+    editor = vim
+    excludesfile = ~/.config/git/gitignore
+    fileMode = false
+
+[init]
+    defaultBranch = main
+
+[pull]
+    ff = only
+
+[push]
+    default = simple
+
+[credential]
+    helper = osxkeychain
+
+[alias]
+    # config/users
+    whoami = !git config user.name && git config user.email
+
+[include]
+    path = ~/.config/git/config.local
