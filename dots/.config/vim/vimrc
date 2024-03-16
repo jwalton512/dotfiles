@@ -1,0 +1,7 @@
+set nocompatible            " be iMproved, required
+
+if !exists("g:syntax_on")
+    syntax enable           " enable syntax highlighting
+endif
+
+filetype plugin indent on   " enable filetype detection, plugins and indenting
