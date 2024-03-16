@@ -13,8 +13,6 @@ cd ~/.dotfiles
 
 I was inspired by some really great dotfiles
 
-[holman](https://github.com/holman/dotfiles)
-
-[mathiasbynens](https://github.com/mathiasbynens/dotfiles)
-
+[holman](https://github.com/holman/dotfiles)  
+[mathiasbynens](https://github.com/mathiasbynens/dotfiles)  
 [mattmc3](https://github.com/mattmc3/zdotdir)
