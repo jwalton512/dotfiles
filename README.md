@@ -6,7 +6,7 @@ My dotfiles for macOS on Silicon
 ```zsh
 git clone https://github.com/jwalton512/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-./bin/dot.zsh
+./bin/dot
 ```
 
 ## Credits
