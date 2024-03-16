@@ -1,11 +1,19 @@
-.zsh_history
 Brewfile.lock.json
 
-**/git/config.local
-
 dots/.local/*
+!dots/.local
 !dots/.local/bin/
 
 dots/.config/*
-!dots/.config/git/
-!dots/.config/zsh/
+
+!dots/.config/git
+dots/.config/git/config.local
+
+dots/.config/iterm2/*
+!dots/.config/iterm2/
+!dots/.config/iterm2/*iterm2.plist
+!dots/.config/iterm2/*.json
+
+!dots/.config/zsh
+.zsh_history
+.zsh_plugins.zsh
