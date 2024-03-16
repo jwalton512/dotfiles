@@ -23,3 +23,12 @@ for src in $(find -H "${DOTFILES_ROOT}/dots" -mindepth 1 -maxdepth 1); do
     dst="${HOME}/$(basename "${src}")"
     linkFile "$src" "$dst"
 done
+
+# Run macos config
+user "Run macos configuration? [n]"
+read -sk macos
+case "$macos" in
+y|Y)
+    . "${DOTFILES_ROOT}/bin/macos"
+    ;;
+esac
