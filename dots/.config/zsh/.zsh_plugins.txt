@@ -3,6 +3,8 @@ mattmc3/zephyr path:plugins/zfunctions
 sindresorhus/pure kind:fpath
 romkatv/powerlevel10k kind:fpath
 
+zsh-users/zsh-history-substring-search
+
 mattmc3/zephyr path:plugins/completion
 mattmc3/zephyr path:plugins/directory
 mattmc3/zephyr path:plugins/editor
