@@ -14,6 +14,8 @@ dots/.config/iterm2/*
 !dots/.config/iterm2/*iterm2.plist
 !dots/.config/iterm2/*.json
 
+!dots/.config/ideavim
+
 !dots/.config/vim
 
 !dots/.config/zsh
