@@ -8,3 +8,7 @@ typeset -gU cdpath fpath mailpath path
 
 # load .zstyles file.
 [[ -r ${ZDOTDIR:-~}/.zstyles ]] && source ${ZDOTDIR:-~}/.zstyles
+
+# antidote
+source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
+antidote load
