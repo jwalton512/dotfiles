@@ -15,3 +15,4 @@ mattmc3/zephyr path:plugins/prompt
 $ZSH_CUSTOM path:plugins/git
 $ZSH_CUSTOM path:plugins/laravel
 $ZSH_CUSTOM path:plugins/python
+$ZSH_CUSTOM path:plugins/vim
