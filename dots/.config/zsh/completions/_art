@@ -1,4 +1,3 @@
-#compdef art
-#autoload
+#compdef art sart
 
 _artisan
