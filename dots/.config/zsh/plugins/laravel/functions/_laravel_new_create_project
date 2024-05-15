@@ -1,11 +1,12 @@
 #!/usr/bin/env zsh
 
-local o_help o_devc o_nosvc php=(83)
+local o_help o_devc o_nosvc o_nopest php=(83)
 
 zparseopts -D -F -K -- \
     {h,-help}=o_help \
     {d,-devcontainer}=o_devc \
     {n,-noservices}=o_nosvc \
+    -nopest=o_nopest \
     {p,-php}:=php || return
 
 if (( $#o_help )); then
@@ -49,6 +50,9 @@ cd $project
 
 [[ ${#services} -gt 0 ]] && eval "./vendor/bin/sail pull ${(j: :)services}"
 ./vendor/bin/sail build
+
+# install pest
+(( ! $#o_nopest )) && _laravel_new_pest
 
 if sudo -n true 2>/dev/null; then
     sudo chown -R $USER: .
