@@ -14,7 +14,8 @@ dots/.config/iterm2/*
 !dots/.config/iterm2/*iterm2.plist
 !dots/.config/iterm2/*.json
 
-!dots/.config/httpie
+dots/.config/httpie/*
+!dots/.config/httpie/config.json
 
 !dots/.config/ideavim
 
@@ -23,3 +24,5 @@ dots/.config/iterm2/*
 !dots/.config/zsh
 .zsh_history
 .zsh_plugins.zsh
+.zcompcache
+dots/.config/zsh/.zsh_sessions
