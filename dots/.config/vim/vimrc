@@ -25,10 +25,13 @@ set ruler                      " Shows the current line number at the bottom-rig
                                " of the screen.
 set wildmenu                   " Great command-line completion, use `<Tab>` to move
                                " around and `<CR>` to validate.
+set visualbell                 " Display visual bell
+set noerrorbells               " Do not play audible bells
 
 " indentation spacing
 set softtabstop=4
 set tabstop=4
+set shiftwidth=4
 set expandtab
 
 " quickly exit insert mode
