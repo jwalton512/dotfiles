@@ -34,7 +34,6 @@ cask 'discord'
 cask 'docker'
 cask 'figma'
 cask 'firefox'
-cask 'iterm2'
 cask 'macfuse'
 cask 'phpstorm'
 cask 'pycharm'
@@ -42,6 +41,7 @@ cask 'tableplus'
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'vmware-horizon-client'
+cask 'wezterm'
 
 # Mac App Store
 mas "Magnet", id: 441258766

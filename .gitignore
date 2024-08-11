@@ -26,3 +26,5 @@ dots/.config/httpie/*
 .zsh_plugins.zsh
 .zcompcache
 dots/.config/zsh/.zsh_sessions
+
+!dots/.config/wezterm
