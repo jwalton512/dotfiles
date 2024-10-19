@@ -1,9 +1,0 @@
-#!/usr/bin/env zsh
-
-local plugin_dir="${${(%):-%x}:h:h}"
-
-export PEST_NO_SUPPORT=true
-composer remove phpunit/phpunit -n --dev
-composer require pestphp/pest pestphp/pest-plugin-laravel defstudio/pest-plugin-laravel-expectations -n --dev --with-all-dependencies
-./vendor/bin/pest --init
-cp "$plugin_dir/stubs/tests/ArchTest.php" tests
