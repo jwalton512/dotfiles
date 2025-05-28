@@ -20,6 +20,7 @@ dots/.config/httpie/*
 !dots/.config/ideavim
 
 !dots/.config/vim
+dots/.config/vim/plugged/
 
 !dots/.config/zsh
 .zsh_history

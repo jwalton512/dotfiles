@@ -7,9 +7,21 @@ set directory=$XDG_CACHE_HOME/vim/swap,~/,/tmp
 set backupdir=$XDG_CACHE_HOME/vim/backup,~/,/tmp
 set undodir=$XDG_CACHE_HOME/vim/undo,~/,/tmp
 set viminfo+=n$XDG_CACHE_HOME/vim/viminfo
-set runtimepath+=$XDG_CONFIG_HOME/vim,$XDG_CONFIG_HOME/vim/after,$VIM,$VIMRUNTIME
+set runtimepath+=$XDG_CONFIG_HOME/vim,$XDG_CONFIG_HOME/vim/after,$VIM,$VIMRUNTIME,/opt/homebrew/opt/fzf
 
 let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc"
+
+" Install vim-plug if not installed
+if empty(glob("$XDG_CONFIG_HOME/vim/autoload/plug.vim"))
+  silent execute "!curl -fLo $XDG_CONFIG_HOME/vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Install plugins
+call plug#begin("$XDG_CONFIG_HOME/vim/plugged")
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+call plug#end()
 
 " Enabling filetype support provides filetype-specific indenting,
 " syntax highlighting, omni-completion and other useful settings.
@@ -32,11 +44,12 @@ set wildmenu                   " Great command-line completion, use `<Tab>` to m
 set visualbell                 " Display visual bell
 set noerrorbells               " Do not play audible bells
 
-" indentation spacing
+" indenting
 set softtabstop=4
 set tabstop=4
 set shiftwidth=4
-set expandtab
+set noexpandtab                " Use tabs not spaces
+set autoindent                 " Inherit indentation from previous line
 
 " quickly exit insert mode
 inoremap jj <esc>
