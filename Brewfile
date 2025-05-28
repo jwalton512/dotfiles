@@ -61,7 +61,6 @@ cask 'pycharm'
 cask 'tableplus'
 cask 'vlc'
 cask 'webstorm'
-cask 'wezterm'
 
 # Mac App Store
 mas "Magnet", id: 441258766
