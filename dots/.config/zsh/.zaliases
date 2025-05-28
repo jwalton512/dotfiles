@@ -1,3 +1,6 @@
+# copy working directory to clipboard
+alias cwd="pwd | tr -d '\n' | pbcopy && echo 'pwd copied to clipboard.'"
+
 # ssh
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy \
     | echo '🔑 Public key copied to clipboard.'"
