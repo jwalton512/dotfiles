@@ -1,31 +1,43 @@
-Brewfile.lock.json
+# ignore everything by default.
+*
 
-dots/.local/*
-!dots/.local
-!dots/.local/bin/
+# explicitly add items back
 
-dots/.config/*
+# dots
+!dots/
+!dots/*
 
+# local binaries
+!dots/.local/bin
+
+# git
 !dots/.config/git
-dots/.config/git/config.local
 
-dots/.config/iterm2/*
-!dots/.config/iterm2/
-!dots/.config/iterm2/*iterm2.plist
-!dots/.config/iterm2/*.json
-
-dots/.config/httpie/*
+# httpie
 !dots/.config/httpie/config.json
 
+# ideavim
 !dots/.config/ideavim
 
+# vim
 !dots/.config/vim
-dots/.config/vim/plugged/
+!dots/.config/vim/**
+dots/.config/vim/.*
+dots/.config/vim/plugged
 
-!dots/.config/zsh
-.zsh_history
-.zsh_plugins.zsh
-.zcompcache
-dots/.config/zsh/.zsh_sessions
+# zsh
+!dots/.config/zsh/
+!dots/.config/zsh/**
+dots/.config/zsh/.*
+dots/.config/zsh/.*/
+!dots/.config/zsh/.p10k.zsh
+!dots/.config/zsh/.zshenv
+!dots/.config/zsh/.zshrc
 
-!dots/.config/wezterm
+# re-ignore local files
+*.local
+local.*
+*.local/
+*.local.*
+!.local/
+!.local/**
