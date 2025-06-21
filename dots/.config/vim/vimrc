@@ -21,6 +21,7 @@ endif
 call plug#begin("$XDG_CONFIG_HOME/vim/plugged")
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-vinegar'
 call plug#end()
 
 " Enabling filetype support provides filetype-specific indenting,
@@ -53,3 +54,10 @@ set autoindent                 " Inherit indentation from previous line
 
 " quickly exit insert mode
 inoremap jj <esc>
+
+" cursor
+let &t_SI = "\e[3 q"   " cursor in insert mode
+let &t_EI = "\e[2 q"   " cursor in normal mode
+let &t_SR = "\e[3 q"   " cursor in replace mode
+let &t_ti .= "\e[2 q"  " cursor when vim starts
+let &t_te .= "\e[3 q"  " cursor when vim exits
