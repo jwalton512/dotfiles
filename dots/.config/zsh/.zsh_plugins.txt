@@ -1,0 +1,30 @@
+#!/bin/zsh
+
+# init
+$ZSH_CUSTOM/plugins/p10k-instaprompt
+mattmc3/zephyr  path:plugins/zfunctions
+mattmc3/zephyr  path:plugins/environment
+
+# prompt
+romkatv/powerlevel10k  kind:fpath
+# mattmc3/zephyr  path:plugins/prompt
+$ZSH_CUSTOM/plugins/prompt
+
+# mac
+mattmc3/zephyr  path:plugins/macos conditional:is-macos
+mattmc3/zephyr  path:plugins/homebrew conditional:is-macos
+
+# configuration
+mattmc3/zephyr  path:plugins/confd
+
+# completion
+mattmc3/ez-compinit
+zsh-users/zsh-completions kind:fpath path:src
+
+# utilities
+zsh-users/zsh-history-substring-search
+ohmyzsh/ohmyzsh  path:plugins/uv
+ohmyzsh/ohmyzsh  path:plugins/git
+
+# custom
+$ZSH_CUSTOM/plugins/vim

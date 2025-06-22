@@ -1,0 +1,23 @@
+#!/bin/zsh
+
+# antidote
+zstyle ':antidote:bundle' use-friendly-names yes
+
+# zephyr
+zstyle ':zephyr:plugin:*' 'use-cache' yes
+
+# confd
+zstyle ':zephyr:plugin:confd' directory $ZSH_CUSTOM
+
+# environment
+prepath=(
+	$HOME/.local/bin(N)
+	$HOME/.composer/vendor/bin(N)
+	"./vendor/bin"
+)
+zstyle ':zephyr:plugin:environment' prepath prepath
+zstyle ':zephyr:plugin:environment' 'use-xdg-basedirs' yes
+
+# prompt
+zstyle ':plugin:prompt' theme p10k pure
+zstyle ':plugin:prompt' immediate yes

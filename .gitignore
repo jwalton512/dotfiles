@@ -30,9 +30,10 @@ dots/.config/vim/plugged
 !dots/.config/zsh/**
 dots/.config/zsh/.*
 dots/.config/zsh/.*/
-!dots/.config/zsh/.p10k.zsh
 !dots/.config/zsh/.zshenv
 !dots/.config/zsh/.zshrc
+!dots/.config/zsh/.zstyles
+!dots/.config/zsh/.zsh_plugins.txt
 
 # re-ignore local files
 *.local
