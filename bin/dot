@@ -32,12 +32,3 @@ y|Y)
     . "${DOTFILES_ROOT}/bin/macos"
     ;;
 esac
-
-# Configure terminal
-if ! infocmp wezterm >/dev/null 2>&1; then
-	tempfile=$(mktemp) \
-		&& curl -o $tempfile https://raw.githubusercontent.com/wez/wezterm/main/termwiz/data/wezterm.terminfo \
-		&& tic -x -o ~/.terminfo $tempfile \
-		&& rm $tempfile
-fi
-
