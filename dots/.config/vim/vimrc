@@ -22,6 +22,7 @@ call plug#begin("$XDG_CONFIG_HOME/vim/plugged")
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-vinegar'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 " Enabling filetype support provides filetype-specific indenting,
@@ -34,23 +35,30 @@ syntax on
 runtime macros/matchit.vim
 
 " various settings
-set autoindent                 " Minimal automatic indenting for any filetype.
-set backspace=indent,eol,start " Intuitive backspace behavior.
-set hidden                     " Possibility to have more than one unsaved buffers.
-set incsearch                  " Incremental search, hit `<CR>` to stop.
-set ruler                      " Shows the current line number at the bottom-right
-                               " of the screen.
-set wildmenu                   " Great command-line completion, use `<Tab>` to move
-                               " around and `<CR>` to validate.
-set visualbell                 " Display visual bell
-set noerrorbells               " Do not play audible bells
+set autoindent
+set backspace=indent,eol,start
+set hidden
+set incsearch
+set laststatus=2
+set noerrorbells
+set nojoinspaces
+set number
+set ruler
+set visualbell
+set wildmenu
 
 " indenting
 set softtabstop=4
 set tabstop=4
 set shiftwidth=4
-set noexpandtab                " Use tabs not spaces
-set autoindent                 " Inherit indentation from previous line
+set noexpandtab
+set autoindent
+
+" colorscheme
+set background=dark
+let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_italic=1
+colorscheme gruvbox
 
 " quickly exit insert mode
 inoremap jj <esc>
