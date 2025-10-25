@@ -7,8 +7,16 @@
 !dots/
 !dots/*
 
+
 # local binaries
 !dots/.local/bin
+
+# allow the config root
+!/dots/.config/
+
+# ghostty
+!dots/.config/ghostty/
+!dots/.config/ghostty/**
 
 # git
 !dots/.config/git
@@ -42,3 +50,6 @@ local.*
 *.local.*
 !.local/
 !.local/**
+
+# catch-all ignores
+.DS_Store

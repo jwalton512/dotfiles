@@ -1,14 +1,13 @@
 #!/bin/zsh
 
 # init
-$ZSH_CUSTOM/plugins/p10k-instaprompt
+$ZSH_CUSTOM  path:plugins/p10k-instaprompt.zsh
 mattmc3/zephyr  path:plugins/zfunctions
 mattmc3/zephyr  path:plugins/environment
 
 # prompt
 romkatv/powerlevel10k  kind:fpath
-# mattmc3/zephyr  path:plugins/prompt
-$ZSH_CUSTOM/plugins/prompt
+$ZSH_CUSTOM  path:plugins/prompt.zsh
 
 # mac
 mattmc3/zephyr  path:plugins/macos conditional:is-macos
@@ -28,5 +27,6 @@ ohmyzsh/ohmyzsh  path:plugins/uv
 ohmyzsh/ohmyzsh  path:plugins/git
 
 # custom
-$ZSH_CUSTOM/plugins/vim
-$ZSH_CUSTOM/plugins/laravel
+$ZSH_CUSTOM  path:plugins/laravel
+$ZSH_CUSTOM  path:plugins/pnpm.zsh
+$ZSH_CUSTOM  path:plugins/vim.zsh

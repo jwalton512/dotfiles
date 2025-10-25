@@ -1,0 +1,25 @@
+term = xterm-256color
+
+macos-icon = xray
+macos-titlebar-style = tabs
+
+theme = Gruvbox Dark Hard
+
+split-divider-color = white
+
+cursor-style-blink = false
+cursor-style = block
+
+font-family = "MesloLGS NF"
+font-size = 16
+adjust-cell-height = 20%
+
+window-padding-x = 6
+window-padding-color = extend-always
+
+shell-integration-features = no-cursor
+
+working-directory = home
+window-inherit-working-directory = false
+
+# vim:set ft=config :

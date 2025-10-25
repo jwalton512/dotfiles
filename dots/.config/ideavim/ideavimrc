@@ -1,4 +1,4 @@
-set timeoutlen=1000
+" set timeoutlen=1000
 set surround
 
 source ~/.config/vim/vimrc
