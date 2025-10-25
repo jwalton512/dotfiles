@@ -9,7 +9,7 @@ export CODE=$XDG_PROJECTS_DIR
 export DOTFILES=$HOME/.dotfiles
 
 export EDITOR=${EDITOR:-vim}
-export SUDO_EDITOR=${SUDO_EDITOR:${EDITOR:-vim}}
+export SUDO_EDITOR=${SUDO_EDITOR:-${EDITOR:-vim}}
 export VISUAL=${VISUAL:-vim}
 export PAGER=${PAGER:-less}
 export LANG=${LANG:-en_US.UTF-8}
