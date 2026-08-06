@@ -1,7 +1,7 @@
 term = xterm-256color
 
 macos-icon = xray
-macos-titlebar-style = tabs
+macos-titlebar-style = hidden
 
 theme = Gruvbox Dark Hard
 
@@ -10,9 +10,9 @@ split-divider-color = white
 cursor-style-blink = false
 cursor-style = block
 
-font-family = "MesloLGS NF"
+font-family = "MonoLisa IDE"
 font-size = 16
-adjust-cell-height = 20%
+adjust-cell-height = 30%
 
 window-padding-x = 6
 window-padding-color = extend-always
