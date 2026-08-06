@@ -35,6 +35,7 @@ brew 'uv'
 brew 'vim'
 brew 'watchman'
 brew 'yt-dlp'
+brew 'zellij'
 brew 'zsh'
 
 # fzf.vim

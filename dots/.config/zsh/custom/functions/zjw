@@ -1,0 +1,26 @@
+#!/bin/zsh
+
+local dir="${1:-$PWD}"
+if [[ "$dir" == "~" ]]; then
+    dir="$HOME"
+elif [[ "$dir" == "~/"* ]]; then
+    dir="$HOME/${dir#\~/}"
+fi
+dir="${dir:A}"
+
+if [[ ! -d "$dir" ]]; then
+    print -u2 -- "zjw: directory does not exist: $dir"
+    return 1
+fi
+
+local session="${2:-${dir:t}}"
+
+if [[ -n "${ZELLIJ:-}" ]]; then
+    zellij action switch-session "$session" \
+        --layout workbench \
+        --cwd "$dir"
+else
+    zellij attach --create "$session" options \
+        --default-layout workbench \
+        --default-cwd "$dir"
+fi

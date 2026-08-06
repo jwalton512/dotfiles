@@ -10,3 +10,10 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '🔑 Public key copied to 
 
 # nvim
 alias nvim='env -u VIMINIT nvim'
+
+# zellij
+alias zj='zellij'
+alias zja='zellij attach'
+alias zjl='zellij list-sessions'
+alias zjk='zellij kill-session'
+alias zjka='zellij kill-all-sessions'

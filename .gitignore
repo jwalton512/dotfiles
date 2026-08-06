@@ -37,6 +37,9 @@
 dots/.config/vim/.*
 dots/.config/vim/plugged
 
+!dots/.config/zellij
+!dots/.config/zellij/**
+
 # zsh
 !dots/.config/zsh/
 !dots/.config/zsh/**

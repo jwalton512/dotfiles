@@ -1,0 +1,37 @@
+layout {
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="tab-bar"
+        }
+
+        children
+
+        pane size=1 borderless=true {
+            plugin location="status-bar"
+        }
+    }
+
+    tab name="editor" focus=true {
+        pane command="env" {
+            args "-u" "VIMINIT" "nvim"
+        }
+    }
+
+    tab name="workbench" {
+        pane split_direction="vertical" {
+            pane name="codex" size="50%"
+
+            pane split_direction="horizontal" {
+                pane name="runner"
+                pane name="runner2"
+                pane name="shell"
+            }
+        }
+    }
+}
+
+keybinds {
+    shared_except "locked" {
+        bind "Alt w" { ToggleTab; }
+    }
+}
