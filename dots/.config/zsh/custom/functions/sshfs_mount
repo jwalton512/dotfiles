@@ -1,0 +1,36 @@
+#!/bin/zsh
+
+# Generic SSHFS mount helper (repo-safe)
+# Usage: sshfs_mount <user@host:/remote/path> <mountpoint> [extra sshfs options...]
+if (( $# < 2 )) || [[ -z "$1" || -z "$2" ]]; then
+  print -u2 -- "usage: sshfs_mount <user@host:/remote/path> <mountpoint> [extra sshfs options...]"
+  return 2
+fi
+
+local remote="$1"
+local mount="$2"
+shift 2
+
+local -a extra_opts=("$@")
+
+# Ensure mountpoint exists
+mkdir -p "$mount"
+
+# If already mounted, unmount safely (macOS, Linux, or FUSE variants)
+if mount | grep -Fq " on $mount "; then
+  echo "Unmounting $mount..."
+  umount "$mount" 2>/dev/null \
+    || diskutil unmount force "$mount" 2>/dev/null \
+    || fusermount -u "$mount" 2>/dev/null \
+    || fusermount3 -u "$mount" 2>/dev/null \
+    || true
+fi
+
+# Sensible defaults; add macOS-specific flags if on Darwin
+local defaults=(-o reconnect -o follow_symlinks)
+if [[ "$(uname -s)" == "Darwin" ]]; then
+  defaults+=(-o noappledouble -o noapplexattr -o volname="$(basename "$mount")")
+fi
+
+echo "Mounting $remote -> $mount"
+sshfs "$remote" "$mount" "${defaults[@]}" "${extra_opts[@]}"
