@@ -12,8 +12,6 @@ zstyle ':zephyr:plugin:confd' directory $ZSH_CUSTOM
 # environment
 prepath=(
 	$HOME/.local/bin(N)
-	$HOME/.composer/vendor/bin(N)
-	"./vendor/bin"
 	"./node_modules/.bin"
 )
 zstyle ':zephyr:plugin:environment' prepath prepath
