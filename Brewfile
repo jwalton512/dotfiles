@@ -15,7 +15,8 @@ brew 'fastlane'
 brew 'ffmpeg'
 brew 'git'
 brew 'httpie'
-brew 'mitmproxy'
+brew 'imagemagick'
+brew 'lazygit'
 brew 'libusb'
 brew 'neovim'
 brew 'nmap'
@@ -25,6 +26,7 @@ brew 'openjdk'
 brew 'pipx'
 brew 'pnpm'
 brew 'poetry'
+brew 'pv'
 brew 'pwgen'
 brew 'pyenv'
 brew 'pyenv-virtualenv'
@@ -45,7 +47,6 @@ brew 'bat'
 brew 'ripgrep'
 brew 'the_silver_searcher'
 brew 'perl'
-brew 'universal-ctags'
 
 # Fonts
 cask 'font-jetbrains-mono'
@@ -56,24 +57,34 @@ cask '1password'
 cask '1password-cli'
 cask 'anaconda'
 cask 'android-studio'
+cask 'betterdisplay'
+cask 'bettertouchtool'
+cask 'codex'
 cask 'darktable'
 cask 'discord'
 cask 'docker'
 cask 'figma'
 cask 'firefox'
+cask 'fx-cast-bridge'
 cask 'ghostty'
 cask 'gqrx'
+cask 'kitty'
 cask 'macfuse'
 cask 'omnissa-horizon-client'
 cask 'plex'
 cask 'postman'
-cask 'pycharm'
 cask 'tableplus'
 cask 'vlc'
-cask 'webstorm'
 cask 'wireshark-app'
 
 # Mac App Store
+mas "1Password for Safari", id: 1569813296
+mas "Amphetamine", id: 937984704
+mas "DaisyDisk", id: 411643860
+mas "Data Jar", id: 1453273600
 mas "Magnet", id: 441258766
-mas "Xcode", id: 497799835
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
 mas "Wireguard", id: 1451685025
+mas "Xcode", id: 497799835
+mas "iMovie", id: 408981434
