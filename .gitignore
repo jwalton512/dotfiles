@@ -27,6 +27,10 @@
 # ideavim
 !dots/.config/ideavim
 
+# nvim
+!dots/.config/nvim
+!dots/.config/nvim/**
+
 # vim
 !dots/.config/vim
 !dots/.config/vim/**
