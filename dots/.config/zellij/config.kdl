@@ -5,6 +5,13 @@ pane_frames false
 show_startup_tips false
 copy_command "pbcopy"
 auto_layout false
+hide_session_name true
+
+ui {
+  pane_frames {
+    hide_session_name true
+  }
+}
 
 keybinds clear-defaults=true {
     locked {

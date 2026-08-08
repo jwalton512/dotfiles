@@ -13,6 +13,8 @@ alias nvim='env -u VIMINIT nvim'
 
 # zellij
 alias zj='zellij'
+alias zjd='zellij delete-session'
+alias zjda='zellij delete-all-sessions'
 alias zja='zellij attach'
 alias zjl='zellij list-sessions'
 alias zjk='zellij kill-session'
