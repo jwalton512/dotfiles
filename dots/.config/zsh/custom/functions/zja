@@ -1,0 +1,12 @@
+#!/bin/zsh
+
+zja() {
+    local session="$1"
+
+    if [[ -n "$session" && -n "${KITTY_WINDOW_ID:-}" ]] &&
+        (( $+commands[kitten] )); then
+        kitten @ set-tab-title "$session"
+    fi
+
+    command zellij attach "$@"
+}
