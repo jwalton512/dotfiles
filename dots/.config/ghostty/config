@@ -1,7 +1,7 @@
 term = xterm-256color
 
 macos-icon = xray
-macos-titlebar-style = hidden
+macos-titlebar-style = tabs
 
 theme = Gruvbox Dark Hard
 
