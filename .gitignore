@@ -3,6 +3,10 @@
 
 # explicitly add items back
 
+# bin
+!bin/
+!bin/*
+
 # dots
 !dots/
 !dots/*
