@@ -11,9 +11,10 @@
 !dots/
 !dots/*
 
-
-# local binaries
-!dots/.local/bin
+# Publishable scripts
+!dots/.local/
+!dots/.local/bin/
+!dots/.local/bin/**
 
 # allow the config root
 !/dots/.config/
