@@ -1,5 +1,3 @@
-tap 'homebrew/bundle'
-tap 'buo/cask-upgrade'
 brew 'mas'
 
 # Binaries
