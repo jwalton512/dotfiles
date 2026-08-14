@@ -1,4 +1,7 @@
-" set timeoutlen=1000
-set surround
+let mapleader = ","
 
-source ~/.config/vim/vimrc
+set surround
+set incsearch
+set visualbell
+
+inoremap jj <Esc>

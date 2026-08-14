@@ -39,12 +39,6 @@
 !dots/.config/nvim
 !dots/.config/nvim/**
 
-# vim
-!dots/.config/vim
-!dots/.config/vim/**
-dots/.config/vim/.*
-dots/.config/vim/plugged
-
 !dots/.config/zellij
 !dots/.config/zellij/**
 

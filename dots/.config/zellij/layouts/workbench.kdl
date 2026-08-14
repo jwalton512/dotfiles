@@ -12,9 +12,7 @@ layout {
     }
 
     tab name="editor" focus=true {
-        pane name="editor" command="env" {
-            args "-u" "VIMINIT" "nvim"
-        }
+        pane name="editor" command="nvim"
     }
 
     tab name="workbench" {

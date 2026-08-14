@@ -8,8 +8,8 @@ export XDG_PROJECTS_DIR=${XDG_PROJECTS_DIR:-$HOME/Code}
 export CODE=$XDG_PROJECTS_DIR
 export DOTFILES=$HOME/.dotfiles
 
-export EDITOR=${EDITOR:-vim}
-export SUDO_EDITOR=${SUDO_EDITOR:-${EDITOR:-vim}}
-export VISUAL=${VISUAL:-vim}
+export EDITOR=${EDITOR:-nvim}
+export SUDO_EDITOR=${SUDO_EDITOR:-${EDITOR:-nvim}}
+export VISUAL=${VISUAL:-nvim}
 export PAGER=${PAGER:-less}
 export LANG=${LANG:-en_US.UTF-8}

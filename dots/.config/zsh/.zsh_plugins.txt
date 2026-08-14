@@ -29,4 +29,3 @@ ohmyzsh/ohmyzsh  path:plugins/git
 # custom
 $ZSH_CUSTOM  path:plugins/java.zsh
 $ZSH_CUSTOM  path:plugins/pnpm.zsh
-$ZSH_CUSTOM  path:plugins/vim.zsh

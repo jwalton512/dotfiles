@@ -2,7 +2,7 @@
     # These values are set in ~/.config/git/config.local
 
 [core]
-    editor = vim
+    editor = nvim
     excludesfile = ~/.config/git/gitignore
     fileMode = false
 
