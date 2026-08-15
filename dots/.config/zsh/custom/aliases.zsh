@@ -6,7 +6,7 @@ alias dfe='cd "$DOTFILES" && ${VISUAL:-${EDITOR:-nvim}} .'
 alias gs='gst'
 
 # ssh
-alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '🔑 Public key copied to clipboard.'"
+alias pubkey="pbcopy < ~/.ssh/id_ed25519.pub && echo '🔑 Public key copied to clipboard.'"
 
 # zellij
 alias zj='zellij'
