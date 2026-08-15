@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+__ensure-zsh-completions-dir() {
+  local completions_dir="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/completions"
+
+  mkdir -p "$completions_dir"
+  touch "$completions_dir/_uv" "$completions_dir/_uvx"
+}

@@ -23,7 +23,7 @@ zsh-users/zsh-autosuggestions
 
 # utilities
 zsh-users/zsh-history-substring-search
-ohmyzsh/ohmyzsh  path:plugins/uv
+ohmyzsh/ohmyzsh  path:plugins/uv pre:__ensure-zsh-completions-dir
 ohmyzsh/ohmyzsh  path:plugins/git
 
 # custom
