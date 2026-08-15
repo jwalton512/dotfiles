@@ -8,7 +8,8 @@ typeset -gU cdpath fpath mailpath path prepath
 __zsh_config_dir="${ZDOTDIR:-$HOME/.zsh}"
 __zsh_data_dir="${XDG_DATA_HOME:-$HOME/.local/share}/zsh"
 __zsh_cache_dir="${XDG_CACHE_HOME:-$HOME/.cache}/zsh"
-for _zdir in $__zsh_data_dir $__zsh_cache_dir; do
+__zsh_completions_dir="$__zsh_cache_dir/completions"
+for _zdir in $__zsh_data_dir $__zsh_cache_dir $__zsh_completions_dir; do
 	[[ -d "$_zdir" ]] && mkdir -p "$_zdir"
 done
 unset _zdir
