@@ -56,6 +56,7 @@ cask 'omnissa-horizon-client'
 cask 'plex'
 cask 'postman'
 cask 'sshfs-mac'
+cask 'superwhisper'
 cask 'tableplus'
 cask 'vlc'
 
