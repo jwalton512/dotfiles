@@ -7,7 +7,7 @@ mattmc3/zephyr  path:plugins/environment
 
 # prompt
 romkatv/powerlevel10k  kind:fpath
-$ZSH_CUSTOM  path:plugins/prompt.zsh
+$ZSH_CUSTOM/plugins/prompt
 
 # mac
 mattmc3/zephyr  path:plugins/macos conditional:is-macos
