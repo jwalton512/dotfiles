@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # init
-$ZSH_CUSTOM  path:plugins/p10k-instaprompt.zsh
+$ZSH_CUSTOM  path:plugins/p10k-instaprompt.zsh kind:zsh
 mattmc3/zephyr  path:plugins/zfunctions
 mattmc3/zephyr  path:plugins/environment
 
@@ -27,5 +27,5 @@ ohmyzsh/ohmyzsh  path:plugins/uv
 ohmyzsh/ohmyzsh  path:plugins/git
 
 # custom
-$ZSH_CUSTOM  path:plugins/java.zsh
-$ZSH_CUSTOM  path:plugins/pnpm.zsh
+$ZSH_CUSTOM  path:plugins/java.zsh kind:zsh
+$ZSH_CUSTOM  path:plugins/pnpm.zsh kind:zsh
